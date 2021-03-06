@@ -322,11 +322,14 @@ body {
   color: var(--accent-color);
   background-color: var(--main-bg-color);
 
-  transition: color var(--animation-duration) var(--timing-function);
+  transition: transform var(--animation-duration) var(--timing-function) ,color var(--animation-duration) var(--timing-function);
 }
 
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   color: var(--secondary-color);
+
+  transform: scale(1.1);
 }
 
 .social-list .social-icon {
